@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Un ramo para ti</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            background: #080f1a;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            position: relative;
+            width: 450px;
+            height: 600px;
+        }
+
+        .glass {
+            height: 600px;
+            width: 450px;
+            background: #122139;
+            border-radius: 225px 225px 0px 0px;
+        }
+
+        .glass:before {
+            content: "";
+            height: 30px;
+            width: 30px;
+            transform-origin: center;
+            border: 20px solid #122139;
+            border-radius: 100%;
+            position: absolute;
+            left: 206px;
+            top: -55px;
+        }
+
+        .glass:after {
+            content: "";
+            position: absolute;
+            height: 15px;
+            width: 450px;
+            background: #a52a2a;
+            top: 100%;
+            left: 0%;
+        }
+
+        .shine {
+            width: 20px;
+            height: 250px;
+            background: white;
+            opacity: 0.2;
+            position: absolute;
+            left: 85%;
+            top: 150px;
+            border-radius: 100px;
+            z-index: 10;
+        }
+
+        .shine:before {
+            content: "";
+            width: 20px;
+            height: 30px;
+            position: absolute;
+            background: white;
+            top: 280px;
+            border-radius: 100px;
+        }
+
+        .petals>div {
+            position: absolute;
+            background: #d52d58;
+            width: 65px;
+            height: 95px;
+            top: 150px;
+            transition: all 0.5s ease-out;
+        }
+
+        .petals>div:nth-child(1) {
+            border-radius: 15px;
+            box-shadow: 0px 0px 60px rgba(245, 148, 184, 1);
+            left: 190px;
+            top: 150px;
+            background: #d52d58;
+        }
+
+        .leaves>div:nth-child(1) {
+            position: absolute;
+            width: 12px;
+            height: 300px;
+            background: #054c05;
+            top: 250px;
+            left: 215px;
+            border-radius: 0 0 100px 100px;
+        }
+
+        .leaves>div:nth-child(2) {
+            position: absolute;
+            width: 50px;
+            height: 80px;
+            border-radius: 10px 80px 40px 80px;
+            background: #054c05;
+            transform-origin: bottom;
+            transform: rotate(-30deg);
+            top: 330px;
+            left: 175px;
+            box-shadow: inset 10px 10px #066406;
+        }
+
+        .leaves>div:nth-child(3) {
+            position: absolute;
+            width: 50px;
+            height: 80px;
+            border-radius: 80px 1px 80px 40px;
+            background: #054c05;
+            transform-origin: bottom;
+            transform: rotate(30deg);
+            top: 300px;
+            left: 220px;
+            box-shadow: inset -10px 10px #066406;
+        }
+
+        .thorns>div {
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: 200px;
+        }
+
+        .thorns>div:nth-child(odd) {
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid transparent;
+            border-left: 12px solid #054c05;
+            left: 225px;
+        }
+
+        .thorns>div:nth-child(even) {
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid transparent;
+            border-right: 12px solid #054c05;
+            left: 200px;
+        }
+
+        .thorns>div:nth-child(1) {
+            top: 350px;
+        }
+
+        .thorns>div:nth-child(2) {
+            top: 300px;
+        }
+
+        .thorns>div:nth-child(4) {
+            top: 400px;
+        }
+
+        .texto {
+            color: white;
+            font-size: 25px;
+            position: absolute;
+            left: 50%;
+            top: 90%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+
+        .mensaje {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            left: 70%;
+            top: 30%;
+            width: 300px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="glass">
+            <div class="shine"></div>
+        </div>
+        <div class="thorns">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="leaves">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="petals">
+            <div></div>
+        </div>
+    </div>
+    <div>
+        <h4 class="texto">TE AMOOOOOOOOOOOOOOOOO ❤️</h4>
+        <p class="mensaje">Mi amor por ti es tan profundo que las palabras no pueden expresarlo por completo. Eres la persona que amo con cada fibra de mi ser, y no puedo imaginar mi vida sin ti. Eres mi todo, y siempre estaré aquí para amarte incondicionalmente, mi amor eterno. ❤️</p>
+    </div>
+</body>
+
+</html>
